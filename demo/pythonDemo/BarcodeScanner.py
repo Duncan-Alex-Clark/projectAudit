@@ -88,7 +88,7 @@ elif platform.system() == 'Linux':
         if (8 * struct.calcsize("P")) == 32:
             mwLib = ctypes.cdll.LoadLibrary('../lib/x86/32bit/libBarcodeScanner.so')
         else:
-            mwLib = ctypes.cdll.LoadLibrary('../lib/x86/64bit/libBarcodeScanner.so')
+            mwLib = ctypes.cdll.LoadLibrary('demo/lib/x86/64bit/libBarcodeScanner.so')
             
     MWBgetLibVersion = mwLib.MWB_getLibVersion
     MWBgetLibVersionText = mwLib.MWB_getLibVersionText
